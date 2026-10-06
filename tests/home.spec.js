@@ -23,7 +23,7 @@ test('verify the search button',async({page})=>{
     await homepage.openAmazon()
     await expect(homepage.searchButton).toBeVisible();
 })
-test.only('search with valid product',async({page})=>{
+test('search with valid product',async({page})=>{
   const homepage=new Homepage(page);
   await homepage.openAmazon()
   await homepage.searchproduct(searchdata.validdata)
