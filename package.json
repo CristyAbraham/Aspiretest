@@ -1,0 +1,19 @@
+{
+  "name": "myplaywrightproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:search": "playwright test search.spec.js",
+    "test:language": "playwright test language.spec.js",
+    "test:home": "playwright test home.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  }
+}
