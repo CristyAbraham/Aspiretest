@@ -26,5 +26,5 @@ test('verify the search button',async({page})=>{
 test('search with valid product',async({page})=>{
   const homepage=new Homepage(page);
   await homepage.openAmazon()
-  await homepage.searchproduct(searchdata.validdata)
+  await homepage.searchproduct(searchdata.validproduct)
 })

@@ -2,13 +2,13 @@ export class Cartpage{
     constructor(page){
     this.page=page;
 
-this.cartbutton= page.getByRole('link', { name: 'items in cart' })
+this.cartbutton= page.locator('#nav-cart-count-container')
 this.cartList=page.locator(".sc-active-cart")
 
 }
 async clickCartButton()
 {
-    this.cartbutton.click()
+    await this.cartbutton.click()
 }
 async verifyCartList(){
 return await this.cartList.allTextContents()
